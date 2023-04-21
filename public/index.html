@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavin's Basic CS Answers</title>
+</head>
+<body>
+    <button id="mmx">Min/Max Calculate</button>
+    <script>
+        document.querySelector('#mmx').addEventListener('click', ()=>{
+            var numbers = parseInt(prompt("How many numbers?", 0));
+            var min = 0;
+            var max = 0;
+            for (let index = 1; index <= numbers; index++) {
+                var number = parseInt(prompt('What is number #'+index));
+                if(number < min) {
+                    min = number;
+                }
+                if(number > max) {
+                    max = number;
+                }
+            }
+            alert("Lowest # is " + min + " and highest is " + max);
+        });
+    </script>
+</body>
+</html>
